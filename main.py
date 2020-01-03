@@ -30,13 +30,14 @@ print(*exams)
 #mobilne = str(input("Czy posiadasz mobilne dodatki które pozwalają ci widzieć wiadomości? (tak/nie)"))
 
 mobilne = input("Czy posiadasz mobilne dodatki które pozwalają ci widzieć wiadomości? (tak/nie)")
-if answer in ["tak","Tak","nie,", "Nie"]:
+if mobilne in ["tak","Tak"]:
 	messages = session.messages()
 	print("Oto wszystkie wiadomości")
 	print(*messages)
 else:
-	print("My też nie, 3 dychy to za dużo :p ")
-	exit()
+	if mobilne in ["nie,", "Nie"]:
+		print("My też nie, 3 dychy to za dużo :p ")
+		exit()
 
 
 
