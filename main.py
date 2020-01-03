@@ -23,11 +23,14 @@ print(*exams)
 # + 2+ np - 5 + 
 
 # Get timetable  
-#	timetable = session.today_timetable  
-#print(*timetable.lessons)  
+plan = input("Czy twoja szkoła udostępniła plan lekcji i chcesz go zobaczyć?")
+if plan in ["Tak","tak"]:
+	timetable = session.today_timetable  
+	print(*timetable.lessons)  
+else:
+	if plan in ["Nie", "nie"]:
+		pass
 # {} {} {} Język angielski Język angielski Matematyka Matematyka Informatyka Informatyka {} {}  
-
-#mobilne = str(input("Czy posiadasz mobilne dodatki które pozwalają ci widzieć wiadomości? (tak/nie)"))
 
 mobilne = input("Czy posiadasz mobilne dodatki które pozwalają ci widzieć wiadomości? (tak/nie)")
 if mobilne in ["tak","Tak"]:
