@@ -1,2 +1,3 @@
 # PyLibrus
  
+No longer maintained.
